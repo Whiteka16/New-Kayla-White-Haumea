@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    font-family: "Nabla",Arial, Helvetica, sans-serif;
+    outline: auto;
+}
+main{
+    background-color: #f9f5e3;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#About{
+    outline: auto;
+}
+#Experience{
+    outline: auto;
+}
+footer{
+    outline:auto;
+}
