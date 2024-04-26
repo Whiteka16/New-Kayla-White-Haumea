@@ -3,18 +3,72 @@ header{
     font-family: "Nabla",Arial, Helvetica, sans-serif;
     outline: auto;
 }
-main{
-    background-color: #f9f5e3;
-    max-width: 40%;
-    max-height: 40%;
+.navbar{
+    position:fixed;
+    top:0;
 }
+.navbar ul{
+    display:flex;
+    list-style-type: none;
+    background-color: #ccf5ac;
+    gap:4em;
+}
+.navbar a{
+    color: #ef798a;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #ccf5ac(0, 0%, 10%);
+}
+main{
+    align-items: center;
+    background-color: #f9f5e3;
+    padding:5%;
 
+}
+main img{
+    display: block;
+    max-width: fit-content;
+    
+}
+.experience-container{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.title-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;    
+}
+.date-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
 #About{
     outline: auto;
 }
 #Experience{
     outline: auto;
 }
-footer{
-    outline:auto;
+#linkedinlogo{
+    display: block;
+    max-width: 30%;
+    height: auto;
+}
+#twitterlogo{
+    display: block;
+    max-width: 30%;
+    height:auto;
+
+}
+.connect-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
