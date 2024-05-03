@@ -32,10 +32,19 @@ main img{
     max-width: fit-content;
 }
 .experience-container{
+    display: grid;
+    grid-template-columns: repeat();
+    gap: 2%;
+  }
+  .exp-item{
     display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-around;
-    gap: 10px;
+    flex-direction: row;
+    gap: 5%;
+    border-style: dashed;
+  }
+  
+  .container > div {
+    border: 1px salmon;
 }
 .title-container{
     display:flex;
