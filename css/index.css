@@ -4,38 +4,51 @@ header{
     outline: auto;
 }
 .navbar{
-    position:fixed;
-    top:0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }
 .navbar ul{
-    display:flex;
+    display: flex;
     list-style-type: none;
     background-color: #ccf5ac;
-    gap:4em;
+    gap: 4em;
 }
 .navbar a{
     color: #ef798a;
     text-decoration: none;
 }
-.navbar a:hover{
-    background-color: #ccf5ac(0, 0%, 10%);
+.navbar a:hover {
+    background-color: #ccf5ac;
 }
 main{
     align-items: center;
     background-color: #f9f5e3;
-    padding:5%;
 
+    align-items: center;
+    padding: 5%;
 }
 main img{
     display: block;
     max-width: fit-content;
-    
 }
 .experience-container{
+    display: grid;
+    grid-template-columns: repeat();
+    gap: 2%;
+  }
+  .exp-item{
     display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-around;
-    gap: 10px;
+    flex-direction: row;
+    gap: 5%;
+    border-style: dashed;
+
+  }
+  
+  .container > div {
+    border: 1px salmon;
 }
 .title-container{
     display:flex;
@@ -55,6 +68,9 @@ main img{
 #Experience{
     outline: auto;
 }
+#skills{
+    outline: auto;
+}
 #linkedinlogo{
     display: block;
     max-width: 30%;
@@ -71,4 +87,18 @@ main img{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+}
+
+@media (min-width: 1000px) {
+    body {
+      background-color: orange;
+    }
+  }
+@media (max-width: 800px){
+    body {
+        background-color: darkmagenta;
+    }
+    h2{
+        font-size: 8vw;
+    }
 }
