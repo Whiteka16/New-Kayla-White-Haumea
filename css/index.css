@@ -4,6 +4,7 @@ header{
     outline: auto;
 }
 .navbar{
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,7 +24,9 @@ header{
     background-color: #ccf5ac;
 }
 main{
+    align-items: center;
     background-color: #f9f5e3;
+
     align-items: center;
     padding: 5%;
 }
