@@ -2,19 +2,42 @@ header{
     text-align: center;
     font-family: "Nabla",Arial, Helvetica, sans-serif;
     outline: auto;
-}
-main{
+ }
+ .navbar{
+ 
+ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+ }
+ .navbar ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #ccf5ac;
+    gap: 4em;
+ }
+ .navbar a{
+    color: #ef798a;
+    text-decoration: none;
+ }
+ .navbar a:hover {
+    background-color: #ccf5ac;
+ }
+ main{
+    align-items: center;
     background-color: #f9f5e3;
-    max-width: 40%;
-    max-height: 40%;
-}
-
-#About{
-    outline: auto;
-}
-#Experience{
-    outline: auto;
-}
-footer{
-    outline:auto;
-}
+ 
+ 
+    align-items: center;
+    padding: 5%;
+ }
+ main img{
+    display: block;
+    max-width: fit-content;
+ }
+ .experience-container{
+    display: grid;
+    grid-template-columns: repeat();
+    gap: 2%;
+ 
