@@ -18,4 +18,31 @@ for(let skill of skills){
     skillItem.innerText = skill;
     skillsList.appendChild(skillItem);
 }
-const messageSection = document.querySelector("")
+const messageForm=document.querySelector(".message-form");
+console.log(messageForm);
+messageForm.addEventListener('submit', e => 
+{e.preventDefault();
+    let usersName = e.target.usersName;
+    let usersEmail = e.target.usersEmail;
+    let usersMessage = e.target.usersMessage;
+    console.log(usersName.value + usersEmail.value + usersMessage.value);
+let messageSection = document.getElementById("message-section");
+let messageList = messageSection.querySelector("ul");
+let newMessages = document.createElement("li")
+newMessages.innerText= usersName.value;
+messageList.appendChild(newMessages);
+e.target.reset();
+});
+
+const removeButton = document.createElement('button');
+removeButton.innerText= 'remove';
+removeButton.type= 'button';
+removeButton.className = 'remove-button';
+removeButton.addEventListener('click', e => {
+    let entry = removeButton.parentNode;
+    entry.removeChild(newMessages);
+    newMessages.appendChild(removeButton);
+    messageList.appendChild(newMessages);
+
+});
+
