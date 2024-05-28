@@ -42,3 +42,26 @@ removeButton.addEventListener('click', e => {
     removeButton.remove();
 });
 });
+fetch(`https://api.github.com/users/Whiteka16/repos`)
+.then((response) => {
+    if (response.ok) {
+        return response.text();
+    } else {
+        throw new Error("Failed to fetch repositories");
+    }
+    })
+.then((data) => {
+    const repositories = JSON.parse(data);
+    console.log(repositories);
+    const projectSection = document.getElementById("projects");
+    let projectList = document.createElement("ul");
+    projectSection.appendChild(projectList);
+
+    for (let repository of repositories)
+    {let project = document.createElement("li");
+    project.innerText = repository.name;
+    projectList.appendChild(project);}
+})
+.catch((error) => {
+    console.error("An error has occurred:", error)
+});
